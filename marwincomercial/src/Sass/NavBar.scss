@@ -1,0 +1,95 @@
+@import './App.scss';
+.navbar {
+    padding: .5rem 1.5rem;
+    width: 100%;
+    justify-content: space-between !important;
+    .navbar-brand {
+        max-width: 200px;
+        width: $w;
+        display: flex;
+        align-items: center;
+        .img-fluid {
+            width: 42px;
+            height: 42px;
+        }
+        h1 {
+            font-size: 1.8rem;
+            padding-left: 10px;
+            text-decoration: none;
+        }
+    }
+    .nav-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .nav-link {
+            color:$primaryColor !important;
+        }
+    }
+    .navbar-nav {
+        .nav-menu {
+            display: flex;
+        }
+    }
+    .AddToCart {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 1rem;
+        a {
+            color:$primaryColor;
+            background-color: $secondaryColor;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 7rem;
+            border:2px solid transparent;
+            margin-left: 1rem;
+            transition: all .4s ease;
+            &:hover {
+                border:2px solid $secondaryColor;
+                color:$secondaryColor;
+                background-color: transparent;
+            }
+        }
+        .cartCount {
+            color:#084298;
+            padding:1rem;
+            border:1px solid #b6d4fe;
+            background: #cfe2ff;
+            width: 10px;
+            height:10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 7rem;
+            position: absolute;
+            left:80%;
+            top:40%;
+        }
+    }
+    .dropdown {
+        color:$primaryColor;
+        background-color: transparent;
+        border: none;
+        &:focus {
+            outline: 0;
+        }
+        option {
+            background-color:$backColor;
+            padding: 8px 16px;
+        }
+    }
+    
+}
+
+@media (min-width:990px) {
+    .navbar {
+        .navbar-collapse {
+            flex-grow: initial;
+        }
+    }
+}
