@@ -4,6 +4,7 @@ import "./Sass/App.scss";
 //components
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import NavBar from "./components/Header/NavBar/NavBar";
+import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 
 // views
 import Home from "./views/Home/Home";
@@ -16,7 +17,8 @@ class App extends React.Component {
 
           <Router>
             <NavBar />
-            <ItemListContainer />
+            {/* <ItemListContainer /> */}
+            <ItemDetailContainer />
             <Switch>
               <Route path="/" exact component={Home}></Route>
               <Route
