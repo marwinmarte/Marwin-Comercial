@@ -1,7 +1,7 @@
 import React from "react";
 import '../../Sass/ItemDetail.css'
 
-export const ItemDetail = ( data) => {
+export const ItemDetail = ( {data}) => {
     return(
         <div className="container">
             <div className="detail">
